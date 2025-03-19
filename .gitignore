@@ -1,0 +1,14 @@
+venv/
+
+# Ignore compiled Python files & cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore package metadata
+*.egg-info/
+*.egg
+
+
+.env
