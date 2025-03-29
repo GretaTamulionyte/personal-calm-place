@@ -9,10 +9,9 @@ class Mode(ABC):
         self.texts_file = texts_file
         self.texts_data = []
 
-
     def load_file(self):
         with open(self.texts_file, "r", encoding="utf-8") as file:
-                self.texts_data = json.load(file)
+            self.texts_data = json.load(file)
         return self.texts_data
 
     def save_file(self):
@@ -39,11 +38,8 @@ class Mode(ABC):
                     continue
                 else:
                     return text_id
-            
 
     @abstractmethod
-    def interact_with_mode(self):
-        ...
-    @abstractmethod    
-    def choose_parameters(self):
-        ...
+    def interact_with_mode(self): ...
+    @abstractmethod
+    def choose_parameters(self): ...
