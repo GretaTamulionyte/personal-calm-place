@@ -21,6 +21,9 @@ def main():
 
 def introduction():
     intro = """
+
+
+    
 Hello! Welcome to Personal Calm Place.
 
 This program lets you create custom relaxation tapes based on vizualization scripts that you yourself write.
@@ -30,8 +33,6 @@ You can tap into your creativity and write scripts that are unique to you, refle
 You can also choose the type of realistic calming voice that will read your creations back to you.
 Also, you can add some calming background audio to make the experience even more relaxing.
 Your finished audio files will be saved for you to enjoy anytime you feel you need it.
-
-
  
     """
     return intro
@@ -48,8 +49,8 @@ def interact_with_menu(texts_file):
 
         Menu:
         
-        type 'write' to:  Write a description about your calm place that is uniquely soothing to you
-        type 'texts' to:  Take a look at all the texts you've written and the example text
+        type 'write' to:  Write about a calm place that is uniquely soothing to you or let AI help you out
+        type 'texts' to:  Take a look at all the texts you've written or generated and the example text
         type 'audio' to:  Make a personalised relaxation audio with your written text and add some calming sounds
 
         type  'exit' to:  Exit program 

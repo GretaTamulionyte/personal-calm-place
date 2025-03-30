@@ -11,6 +11,7 @@ from pydub.utils import which
 import json
 import math
 import os
+import sys
 
 
 class MakeAudio(Mode):
@@ -37,6 +38,15 @@ First select from the list of texts by typing the id number"
                 self.texts_data[index_of_text]["text"] = " ".join(
                     self.texts_data[index_of_text]["text"]
                 )
+
+            if (
+                self.texts_data[index_of_text]["text"] is None
+                or self.texts_data[index_of_text]["text"] == ""
+            ):
+                print(
+                    "The text you have chosen appears to be empty. Please start over."
+                )
+                sys.exit()
 
             audio_conversion_running = True
             while audio_conversion_running:
@@ -179,7 +189,7 @@ Type 'y' if yes, type 'n' if no, type 'e' if you want to exit the mode:\n"
                     """
             )
 
-            sound_selection = input("\n\n Your choice: ")
+            sound_selection = input("\n\nYour choice: ")
             if sound_selection in available_sounds.keys():
                 AudioSegment.converter = which("ffmpeg")
                 talking_audio = AudioSegment.from_file(

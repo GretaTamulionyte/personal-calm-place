@@ -3,7 +3,8 @@
 
 "Hello! Welcome to Personal Calm Place.
 
-This program lets you create custom relaxation tapes based on vizualization scripts that you yourself write.
+This program lets you create custom relaxation tapes based on visualization scripts that you yourself write
+or that you generate with the help of AI.
 
 
 You can tap into your creativity and write scripts that are unique to you, reflecting what personally calms you the most.
@@ -12,20 +13,22 @@ Also, you can add some calming background audio to make the experience even more
 Your finished audio files will be saved for you to enjoy anytime you feel you need it."
 
 This program is based on the simple notion that vizualization relaxation scripts and 
-audio tapes(basically vizualizing a calming place to relax and unwind), while there are plenty of them,
+audio tapes (basically visualizing a calming place to relax and unwind), while there are plenty of them,
 may be more relaxing if a user adds their own personal touch to it.
 
-The idea is that the user can write a personally meaningful soothing text,
-then choose a voice that they like, and then choose some background sounds 
+The idea is that the user can write a personally meaningful soothing text, or generate
+one by a few simple keywords, then choose a voice that they like, and then choose some background sounds 
 that would compliment the custom vizualization relaxation tape.
 
 This is a very very minimalist version of the program, as I am still learning and can see a million ways to improve it.
 
-# Functionality that will be added on later versions:
+# Functionality that should be added on later versions:
 1. More voices and previews of the voices so that the user can choose with more information at hand
 2. Another API that will add more variety and let the user have more control over background sounds - 
 basically any AI generated background sound (like birds chirping) with a simple prompt
 3. Mixing the two tracks needs improving
+4. Maybe searching for a text by title function as you can write or generate many texts and store them
+5. Ability to delete texts
 4. And lots lots more
 
 
@@ -45,15 +48,26 @@ brew install ffmpeg       # macOS
 # Other important instructions for the program to work:
 1. You will need to sign up at elevenlabs.io and get your API key from https://elevenlabs.io/app/settings/api-keys
 Luckily the trial is free and offers more than enough credits to play around with this program
-2. You will need to create and activate your virtual environment in VS Code or wherever and 
-install all the dependencies from the requirements.txt file to check out the project.
-3. You will also need to look at the .env.example file, create .env file and update the environmental variables
-with your own valid values accordingly.
-4. Make sure to download even the mp3 files.
 
+2. Get gemini API key here: https://ai.google.dev/gemini-api/docs/api-key
+
+3. You will need to create and activate your virtual environment in VS Code or wherever and 
+install all the dependencies from the requirements.txt file to check out the project.
+
+4. You will also need to look at the .env.example file, create .env file and update the environmental variables
+with your own valid values accordingly.
+
+5. Make sure to download even the mp3 files.
 
 The command to install dependencies:
 pip install -r requirements.txt
+
+
+Credit where credit is due:
+
+The mp3 files are from pixabay.com and are royalty-free.
+I am using elevenlabs.io API and Google Gemini API in this program.
+The default vizualization text I got from https://wholesomeresources.com/3207/woodland-walk-free-guided-imagery-script/
 
 
 

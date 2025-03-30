@@ -1,6 +1,5 @@
 from .modes_base_class import Mode
 
-
 class TextData(Mode):
 
     def interact_with_mode(self):
